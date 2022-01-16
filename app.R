@@ -424,3 +424,88 @@ multiplicar_funcao(6, 8)
 multiplicar_funcao(7, 8)
 multiplicar_funcao(9, 7)
 multiplicar_funcao(6, 9)
+
+# vetor em R: character
+paises_america_do_norte <- c('Mexico', 'Canada', 'EUA')
+
+print(paises_america_do_norte)
+
+# vetor em R: numerico
+numeros <- c(1, 2, 3, 4, 5)
+
+print(numeros)
+
+# vetor em R: ':'
+numeros1 <- 1:10
+numeros2 <- 1.1:5.1
+
+print(numeros1)
+print(numeros2)
+
+# vetor em R: tamanho do vetor length()
+paises_america_do_norte <- c('Mexico', 'Canada', 'EUA')
+
+print(length(paises_america_do_norte))
+
+for (indice in 1:length(paises_america_do_norte)) {
+  print(indice)
+}
+
+for (pais in paises_america_do_norte) {
+  print(pais)
+}
+
+# vetor em R: sort()
+paises_america_do_sul <- c('Venezuela', 
+                           'Guiana', 
+                           'Uruguai', 
+                           'Paraguai', 
+                           'Argentina', 
+                           'Brasil', 
+                           'Colombia', 
+                           'Chile', 
+                           'Guiana Francesa (Franca)', 
+                           'Bolivia', 
+                           'Equador', 
+                           'Peru', 
+                           'Suriname')
+
+print(sort(paises_america_do_sul))
+
+numeros <- c(10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+
+print(sort(numeros))
+
+# vetor em R: acesso
+paises_america_do_sul <- c('Venezuela', 
+                           'Guiana', 
+                           'Uruguai', 
+                           'Paraguai', 
+                           'Argentina', 
+                           'Brasil', 
+                           'Colombia', 
+                           'Chile', 
+                           'Guiana Francesa (Franca)', 
+                           'Bolivia', 
+                           'Equador', 
+                           'Peru', 
+                           'Suriname')
+
+paises_america_do_sul[5]
+
+paises_america_do_sul[c(1, 3, 5, 7, 9, 11, 13)]
+
+for (pais in paises_america_do_sul) {
+  print(pais)
+}
+
+# vetor em R: alterando elemento
+numeros <- c(1, 2, 3, 4, 5)
+
+numeros[1] <- 5
+
+print(numeros)
+
+numeros[c(2, 4, 5)] <- c(4, 2, 1) 
+
+print(numeros)
