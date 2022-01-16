@@ -509,3 +509,92 @@ print(numeros)
 numeros[c(2, 4, 5)] <- c(4, 2, 1) 
 
 print(numeros)
+
+# lista em R
+lista <- list('lentilha',
+              'feijao',
+              'arroz',
+              'pimentao',
+              'brocolis',
+              'bolacha',
+              'batata',
+              'tomate',
+              'pao',
+              'margarina',
+              'cenoura', 
+              'abobrinha', 
+              'cebolinha', 
+              'azeitona', 
+              'macarrao', 
+              'molho de tomate', 
+              'farinha de trigo', 
+              'farofa', 
+              'fermento quimico',
+              'fermento biologico',
+              'cebola', 
+              'alho', 
+              'oleo de soja', 
+              'azeite')
+
+print(length(lista))
+
+# lista em R: acesso
+lista[5]
+
+for (elemento in lista) {
+  print(elemento)
+}
+
+# lista em R: alterando elemento
+lista <- list('lentilha',
+              'feijao',
+              'arroz',
+              'pimentao',
+              'brocolis',
+              'bolacha',
+              'batata',
+              'tomate',
+              'pao',
+              'margarina',
+              'cenoura', 
+              'abobrinha', 
+              'cebolinha', 
+              'azeitona', 
+              'macarrao', 
+              'molho de tomate', 
+              'farinha de trigo', 
+              'farofa', 
+              'fermento quimico',
+              'fermento biologico',
+              'cebola', 
+              'alho', 
+              'oleo de soja', 
+              'azeite')
+
+lista[1] <- 'leite de soja'
+
+print(lista[1])
+
+lista[c(1, 2, 3, 4)] <- c('leite de amendoa', 'banana', 'maca', 'milho')
+
+for (elemento in lista) {
+  print(elemento)
+}
+
+# lista em R: verificando se um elemento existe na lista
+'leite de amendoa' %in% lista
+
+# lista em R: adicionando elementos na lista
+append(lista, 'leite de soja')
+append(lista, 'lentilha')
+append(lista, 'feijao')
+append(lista, 'arroz')
+append(lista, 'pimentao')
+
+print(lista)
+
+for (elemento in lista) {
+  print(elemento)
+}
+
+print(length(lista))
