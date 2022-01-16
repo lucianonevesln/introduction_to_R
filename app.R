@@ -738,7 +738,6 @@ for (row in 1:nrow(matriz)) {
 print(matriz)
 
 # matriz em R: loop
-
 matriz1 <- matrix(c('lentilha',
                     'feijao',
                     'arroz',
