@@ -737,7 +737,7 @@ for (row in 1:nrow(matriz)) {
 
 print(matriz)
 
-# matriz em R: loop
+# matriz em R: combinando
 matriz1 <- matrix(c('lentilha',
                     'feijao',
                     'arroz',
