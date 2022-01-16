@@ -598,3 +598,179 @@ for (elemento in lista) {
 }
 
 print(length(lista))
+
+# matriz em R
+matriz <- matrix(c(1, 2, 3, 4, 5, 6), ncol = 2, nrow = 3)
+
+print(matriz)
+
+# matriz em R: acesso
+matriz <- matrix(c(1, 2, 3, 4, 5, 6), ncol = 2, nrow = 3)
+
+print(matriz[3, 2])
+
+for (item in matriz) {
+  print(item)
+}
+
+print(matriz[1,])
+print(matriz[2,])
+print(matriz[3,])
+
+print(matriz[,1])
+print(matriz[,2])
+
+print(matriz[c(2,3),])
+print(matriz[,c(1,2)])
+
+# matriz em R: adicionando linha
+matriz <- matrix(c(1, 2, 3, 4, 5, 6), ncol = 2, nrow = 3)
+
+matriz <- rbind(matriz, c(7,8))
+
+print(matriz)
+
+# matriz em R: remover linha e/ou coluna
+matriz <- matrix(c(1, 2, 3, 4, 5, 6), ncol = 2, nrow = 3)
+
+matriz <- matriz[-c(1), -c(1)]
+
+print(matriz)
+
+# matriz em R: localizando item
+matriz <- matrix(c('lentilha',
+                   'feijao',
+                   'arroz',
+                   'pimentao',
+                   'brocolis',
+                   'bolacha',
+                   'batata',
+                   'tomate',
+                   'pao',
+                   'margarina',
+                   'cenoura', 
+                   'abobrinha', 
+                   'cebolinha', 
+                   'azeitona', 
+                   'macarrao', 
+                   'molho de tomate', 
+                   'farinha de trigo', 
+                   'farofa', 
+                   'fermento quimico',
+                   'fermento biologico',
+                   'cebola', 
+                   'alho', 
+                   'oleo de soja', 
+                   'azeite'), ncol = 3, nrow = 8)
+
+'molho de tomate' %in% matriz
+'pera' %in% matriz
+
+# matriz em R: tamanho
+matriz <- matrix(c('lentilha',
+                   'feijao',
+                   'arroz',
+                   'pimentao',
+                   'brocolis',
+                   'bolacha',
+                   'batata',
+                   'tomate',
+                   'pao',
+                   'margarina',
+                   'cenoura', 
+                   'abobrinha', 
+                   'cebolinha', 
+                   'azeitona', 
+                   'macarrao', 
+                   'molho de tomate', 
+                   'farinha de trigo', 
+                   'farofa', 
+                   'fermento quimico',
+                   'fermento biologico',
+                   'cebola', 
+                   'alho', 
+                   'oleo de soja', 
+                   'azeite'), ncol = 3, nrow = 8)
+
+dim(matriz) # total de linhas e colunas
+length(matriz) # total de valores
+
+# matriz em R: loop
+matriz <- matrix(c('lentilha',
+                   'feijao',
+                   'arroz',
+                   'pimentao',
+                   'brocolis',
+                   'bolacha',
+                   'batata',
+                   'tomate',
+                   'pao',
+                   'margarina',
+                   'cenoura', 
+                   'abobrinha', 
+                   'cebolinha', 
+                   'azeitona', 
+                   'macarrao', 
+                   'molho de tomate', 
+                   'farinha de trigo', 
+                   'farofa', 
+                   'fermento quimico',
+                   'fermento biologico',
+                   'cebola', 
+                   'alho', 
+                   'oleo de soja', 
+                   'azeite'), ncol = 3, nrow = 8)
+
+for (row in 1:nrow(matriz)) {
+  print(matriz[row])
+}
+
+for (col in 1:ncol(matriz)) {
+  print(matriz[col])
+}
+
+for (row in 1:nrow(matriz)) {
+  for (col in 1:ncol(matriz)) {
+    print(matriz[row, col])
+  }
+}
+
+print(matriz)
+
+# matriz em R: loop
+
+matriz1 <- matrix(c('lentilha',
+                    'feijao',
+                    'arroz',
+                    'pimentao',
+                    'brocolis',
+                    'bolacha',
+                    'batata',
+                    'tomate',
+                    'pao',
+                    'margarina',
+                    'cenoura', 
+                    'abobrinha'), ncol = 3, nrow = 8)
+
+matriz2 <- matrix(c('cebolinha', 
+                    'azeitona', 
+                    'macarrao', 
+                    'molho de tomate', 
+                    'farinha de trigo', 
+                    'farofa', 
+                    'fermento quimico',
+                    'fermento biologico',
+                    'cebola', 
+                    'alho', 
+                    'oleo de soja', 
+                    'azeite'), ncol = 3, nrow = 8)
+
+print(matriz1)
+
+matriz3 <- rbind(matriz1, matriz2)
+
+print(matriz3)
+
+matriz3 <- cbind(matriz1, matriz2)
+
+print(matriz3)
