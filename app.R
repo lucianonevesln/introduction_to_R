@@ -1,8 +1,8 @@
 # mostrar na console
 print('Hello World!')
 
-# atribuindo valor a diversas variáveis
-var1 <- var2 <- var3 <- "Estou presente em várias variáveis"
+# atribuindo valor a diversas variaveis
+var1 <- var2 <- var3 <- "Estou presente em varias variaveis"
 
 contador <- 1
 
@@ -10,7 +10,7 @@ for (i in 1:5) {
     print(var1)
     print(var2)
     print(var3)
-    print(paste('Execução: ', contador))
+    print(paste('Execucao: ', contador))
     contador <- contador + 1
 }
 
@@ -36,7 +36,7 @@ class(dataType3)
 typeof(dataType3)
 
 # data type: character
-dataType4 <- "Este é um exemplo de character (string) em R"
+dataType4 <- "Este e um exemplo de character (string) em R"
 
 print(dataType4)
 class(dataType4)
@@ -54,7 +54,7 @@ print(dataType5_2)
 class(dataType5_2)
 typeof(dataType5_2)
 
-# tipos de números: numeric
+# tipos de numeros: numeric
 var1 <- 10.10
 var2 <- 10
 
@@ -66,21 +66,21 @@ print(var2)
 class(var2)
 typeof(var2)
 
-# tipos de números: integer 
+# tipos de numeros: integer 
 var3 <- 100L
 
 print(var3)
 class(var3)
 typeof(var3)
 
-# tipos de números: complex
+# tipos de numeros: complex
 var4 <- 1000i
 
 print(var4)
 class(var4)
 typeof(var4)
 
-# conversão: tipo numérico
+# conversao: tipo numerico
 var_integer_to_numeric <- 100L
 var_complex_to_numeric <- 1000i
 
@@ -107,7 +107,7 @@ class(var_complex_to_numeric)
 typeof(var_complex_to_numeric)
 print('-------------------------')
 
-# conversão: tipo inteiro
+# conversao: tipo inteiro
 var_numeric_to_integer <- 1000.1
 
 print('-------------------------')
@@ -124,84 +124,84 @@ class(var_numeric_to_integer)
 typeof(var_numeric_to_integer)
 print('-------------------------')
 
-# operadores matemáticos: *
+# operadores matematicos: *
 multplicar <- 10 * 10
 
 print(multplicar)
 
-# operadores matemáticos: /
+# operadores matematicos: /
 dividir <- 10 / 5
 
 print(dividir)
 
-# operadores matemáticos: +
+# operadores matematicos: +
 somar <- 50 + 50
 
 print(somar)
 
-# operadores matemáticos: -
+# operadores matematicos: -
 subtrair <- 100 - 50
 
 print(subtrair)
 
-# operadores matemáticos: %
+# operadores matematicos: %
 dividir_resto_par <- 14 %% 2
 dividir_resto_impar <- 15 %% 2
 
 print(dividir_resto_par)
 print(dividir_resto_impar)
 
-# operadores matemáticos: %/%
+# operadores matematicos: %/%
 dividir_inteiros <- 10 %/% 2
 
 dividir_inteiros
 
-# operadores matemáticos: ^
+# operadores matematicos: ^
 exponenciar <- 10 ^ 2
 
 print(exponenciar)
 
-# funções matemáticas: max()
+# funcoes matematicas: max()
 funcao_max <- max(1, 2, 3, 4, 5)
 
 print(funcao_max)
 
-# funções matemáticas: min()
+# funcoes matematicas: min()
 funcao_min <- min(1, 2, 3, 4, 5)
 
 print(funcao_min)
 
-# funções matemáticas: abs()
+# funcoes matematicas: abs()
 funcao_abs <- abs(-100)
 
 print(funcao_abs)
 
-# funções matemáticas: sqrt()
+# funcoes matematicas: sqrt()
 funcao_sqrt <- sqrt(25)
 
 print(funcao_sqrt)
 
-# funções matemáticas: ceiling()
+# funcoes matematicas: ceiling()
 funcao_ceiling <- ceiling(10.5)
 
 print(funcao_ceiling)
 
-# funções matemáticas: floor()
+# funcoes matematicas: floor()
 funcao_floor <- floor(10.5)
 
 print(funcao_floor)
 
 # string ou chacacter
 
-texto <- "Este é um exemplo de texto:
-          aqui, você pode ver como um
+texto <- "Este e um exemplo de texto:
+          aqui, voce pode ver como um
           texto pode ser armazenado em
-          uma variável."
+          uma variavel."
 
 print(texto)
 cat(texto) # mostra o texto de forma organizada
 nchar(texto) # mostra a quantidade de caracteres existentes no texto
-grepl("Este é um exemplo de texto:", texto) # verifica se uma letra ou sequência de caracteres existe no texto, retornando TRUE ou FALSE
+grepl("Este é um exemplo de texto:", texto) # verifica se uma letra ou sequencia de caracteres existe no texto, retornando TRUE ou FALSE
 grepl("Esse trecho existe?", texto)
 
 # operadores relacionais: ==
@@ -240,7 +240,7 @@ var_y <- 25
 
 print(var_x <= var_y)
 
-# operadores lógicos: &
+# operadores logicos: &
 var_x <- 30
 var_y <- 25
 
@@ -248,7 +248,7 @@ if (var_x == 30 & var_y == 25) {
   print(TRUE)
 }
 
-# operadores lógicos: &&
+# operadores logicos: &&
 var_x <- 30
 var_y <- 25
 
@@ -258,7 +258,7 @@ if (var_x == 25 && var_y == 30) {
   print(FALSE)
 }
 
-# operadores lógicos: |
+# operadores logicos: |
 var_x <- 30
 var_y <- 25
 
@@ -268,7 +268,7 @@ if (var_x == 25 | var_y == 25) {
   print(FALSE)
 }
 
-# operadores lógicos: ||
+# operadores logicos: ||
 var_x <- 30
 var_y <- 25
 
@@ -278,7 +278,7 @@ if (var_x == 25 || var_y == 30) {
   print(FALSE)
 }
 
-# operadores lógicos: !
+# operadores logicos: !
 true <- TRUE
 false <- FALSE
 
@@ -313,7 +313,7 @@ var_1 <- 'elemento1'
 var_2 <- 'elemento1'
 
 if (var_1 == var_2) {
-  print('Os elementos são iguais')
+  print('Os elementos sao iguais')
 }
 
 # condicional if com else
@@ -321,9 +321,9 @@ var_1 <- 'elemento1'
 var_2 <- 'elemento2'
 
 if (var_1 == var_2) {
-  print('Os elementos são iguais')
+  print('Os elementos sao iguais')
 } else {
-  print("Os elementos são diferentes")
+  print("Os elementos sao diferentes")
 }
 
 # condicional else if
@@ -331,9 +331,9 @@ var_1 <- 'elemento1'
 var_2 <- 'elemento2'
 
 if (var_1 == var_2) {
-  print('Os elementos são iguais')
+  print('Os elementos sao iguais')
 } else if (var_1 != var_2) {
-  print("Os elementos não são iguais")
+  print("Os elementos nao sao iguais")
 } 
 
 # usando a estrutura for
@@ -341,12 +341,12 @@ for (i in 1:10) {
   print('Hello World')
 }
 
-# variação da estrutura for
+# variacao da estrutura for
 for (i in 1:10) {
   print('Hello World')
 }
 
-# variação de for usando a ultima variável criada
+# variacao de for usando a ultima variavel criada
 hello <- "Hello World"
 
 for (i in 1:contador) {
@@ -365,16 +365,62 @@ while (contador <= 10) {
   contador <- contador + 1
 }
 
-# função para descobrir o tipo de uma variável
+# funcoes para descobrir o tipo de uma variavel
 typeof(contador)
 
-# utilizando estrutura while e concatenando variáveis
+# utilizando estrutura while e concatenando variaveis
 name <- "Luciano Neves"
 age  <- 32
 
 contador <- 1
 
 while (contador <= 10) {
-    print(paste('Olá, ', name, '. Você tem ', age, ' de idade.'))
+    print(paste('Ola, ', name, '. Voca tem ', age, ' de idade.'))
     contador <- contador + 1
 }
+
+# funcao em R
+minha_funcao <- function() {
+  print('Hello World')
+}
+
+minha_funcao()
+
+# funcao com argumento
+name_function <- function(name) {
+  print(paste('Ola', name, ', seja bem vindo (a).'))
+}
+
+name_function('Luciano')
+name_function('Pamela')
+name_function('Rukia')
+name_function('Juju')
+
+# funcao com argumentos
+name_function <- function(firstName, lastName) {
+  print(paste('Ola,', firstName, '. Seu sobrenome �', lastName))
+}
+
+name_function('Luciano', 'Neves')
+
+# funcao com valor default 
+pais_funcao <- function(pais = 'Brasil') {
+  print(paste('Eu sou do (a),', pais))
+}
+
+pais_funcao()
+pais_funcao('Africa do Sul')
+pais_funcao('Canada')
+pais_funcao('Angola')
+pais_funcao('Alemanha')
+
+# funcao com retorno de valor
+multiplicar_funcao <- function(numero1, numero2) {
+  return (numero1 * numero2)
+}
+
+multiplicar_funcao(10, 2)
+multiplicar_funcao(6, 8)
+multiplicar_funcao(7, 8)
+multiplicar_funcao(9, 7)
+multiplicar_funcao(6, 9)
