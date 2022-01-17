@@ -773,3 +773,41 @@ print(matriz3)
 matriz3 <- cbind(matriz1, matriz2)
 
 print(matriz3)
+
+# Array em R
+criando_array <- c(1:24)
+
+criando_array <- array(criando_array, dim = c(4, 3, 2))
+
+print(criando_array)
+
+# Array em R: acesso
+criando_array <- c(1:24)
+
+criando_array <- array(criando_array, dim = c(4, 3, 2))
+
+criando_array[2, 3, 2]
+criando_array[1, 1, 2]
+
+print(criando_array[c(1),,1]) #acessando linha
+print(criando_array[,c(3),2]) #acessando coluna
+
+for (item in criando_array) {
+  print(item)
+}
+
+# Array em R: verificando se item existe
+criando_array <- c(1:24)
+
+criando_array <- array(criando_array, dim = c(4, 3, 2))
+
+1 %in% criando_array
+7 %in% criando_array
+
+# Array em R: tamanho do array
+criando_array <- c(1:24)
+
+criando_array <- array(criando_array, dim = c(4, 3, 2))
+
+dim(criando_array)
+length(criando_array)
