@@ -774,14 +774,14 @@ matriz3 <- cbind(matriz1, matriz2)
 
 print(matriz3)
 
-# Array em R
+# array em R
 criando_array <- c(1:24)
 
 criando_array <- array(criando_array, dim = c(4, 3, 2))
 
 print(criando_array)
 
-# Array em R: acesso
+# array em R: acesso
 criando_array <- c(1:24)
 
 criando_array <- array(criando_array, dim = c(4, 3, 2))
@@ -796,7 +796,7 @@ for (item in criando_array) {
   print(item)
 }
 
-# Array em R: verificando se item existe
+# array em R: verificando se item existe
 criando_array <- c(1:24)
 
 criando_array <- array(criando_array, dim = c(4, 3, 2))
@@ -804,10 +804,105 @@ criando_array <- array(criando_array, dim = c(4, 3, 2))
 1 %in% criando_array
 7 %in% criando_array
 
-# Array em R: tamanho do array
+# array em R: tamanho do array
 criando_array <- c(1:24)
 
 criando_array <- array(criando_array, dim = c(4, 3, 2))
 
 dim(criando_array)
 length(criando_array)
+
+# data frame em R
+criando_df <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                         idade = c(32, 32, 5, 5),
+                         animal = c(FALSE, FALSE, TRUE, TRUE))
+
+print(criando_df)
+
+summary(criando_df)
+
+# data frame em R: acesso
+criando_df <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                         idade = c(32, 32, 5, 5),
+                         animal = c(FALSE, FALSE, TRUE, TRUE))
+
+criando_df[1]
+criando_df[2]
+criando_df[3]
+
+criando_df[["nome"]]
+criando_df[["idade"]]
+criando_df[["animal"]]
+
+criando_df$nome
+criando_df$idade
+criando_df$animal
+
+# data frame em R: adicionando linha
+criando_df <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                         idade = c(32, 32, 5, 5),
+                         animal = c(FALSE, FALSE, TRUE, TRUE))
+
+criando_df <- rbind(criando_df, c('Lakan', 10, TRUE))
+
+print(criando_df)
+
+# data frame em R: adicionando coluna
+criando_df <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                         idade = c(32, 32, 5, 5),
+                         animal = c(FALSE, FALSE, TRUE, TRUE))
+
+criando_df <- cbind(criando_df, peso = c(82, 61, 3.5, 10))
+
+print(criando_df)
+
+# data frame em R: removendo linha e/ou coluna
+criando_df <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                         idade = c(32, 32, 5, 5),
+                         animal = c(FALSE, FALSE, TRUE, TRUE))
+
+criando_df <- criando_df[-c(8), ]
+
+print(criando_df)
+
+criando_df <- criando_df[, -c(5)]
+
+print(criando_df)
+
+# data frame em R: tamanho
+criando_df <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                         idade = c(32, 32, 5, 5),
+                         animal = c(FALSE, FALSE, TRUE, TRUE))
+
+print(criando_df)
+
+dim(criando_df)
+length(criando_df)
+ncol(criando_df)
+nrow(criando_df)
+
+# data frame em R: combinando data frame linha
+criando_df1 <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                          idade = c(32, 32, 5, 5),
+                          animal = c(FALSE, FALSE, TRUE, TRUE))
+
+criando_df2 <- data.frame(nome = c('Maria', 'Joao', 'Ronaldo'),
+                          idade = c(72, 72, 56),
+                          animal = c(FALSE, FALSE, FALSE))
+
+criando_df3 <- rbind(criando_df1, criando_df2)
+
+print(criando_df3)
+
+# data frame em R: combinando data frame coluna
+
+criando_df1 <- data.frame(nome = c('Luciano', 'Pamela', 'Rukia', 'Juju'),
+                          idade = c(32, 32, 5, 5),
+                          animal = c(FALSE, FALSE, TRUE, TRUE))
+
+criando_df2 <- data.frame(peso = c(82, 61, 3.5, 10),
+                          tamanho = c(1.79, 1.61, 30, 15))
+
+criando_df3 <- cbind(criando_df1, criando_df2)
+
+print(criando_df3)
